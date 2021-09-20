@@ -30,6 +30,7 @@
         <option value="Scala Object" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Scala Class" />
       </list>
     </option>
   </component>
@@ -55,7 +56,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/nefu/spatialUtils" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3402299" />
   </component>
@@ -64,11 +65,11 @@
       <recent name="org.locationtech.jts.index.strtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.nefu.DebugQTC.buffer_partition" />
       <recent name="test" />
+      <recent name="edu.nefu.DebugQTC.spatialRDD" />
+      <recent name="edu.nefu.spatialRddTool" />
       <recent name="edu.nefu" />
-      <recent name="edu.nefu.DebugQTC.gqtree" />
-      <recent name="edu.nefu.gqtree" />
-      <recent name="edu.nefu.DebugQTC.partition" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/scala" />
@@ -78,23 +79,9 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KNNQueryTest2">
-    <configuration name="BufferPartition_Test" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="test.BufferPartition_Test" />
-      <module name="maven_DebugQTC" />
-      <option name="VM_PARAMETERS" value="-Xmx18G -Xms18G" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KNNQueryTest2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="test.KNNQueryTest2" />
+  <component name="RunManager" selected="Application.SpatialJoinTest4">
+    <configuration name="SpatialJoinTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="test.SpatialJoinTest" />
       <module name="maven_DebugQTC" />
       <extension name="coverage">
         <pattern>
@@ -106,21 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriorityDemo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="edu.nefu.PriorityDemo" />
-      <module name="maven_DebugQTC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nefu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RangeQueryTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="test.RangeQueryTest" />
+    <configuration name="SpatialJoinTest2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="test.SpatialJoinTest2" />
       <module name="maven_DebugQTC" />
       <extension name="coverage">
         <pattern>
@@ -132,12 +106,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RangeQueryTest2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="test.RangeQueryTest2" />
+    <configuration name="SpatialJoinTest3" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="test.SpatialJoinTest3" />
       <module name="maven_DebugQTC" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpatialJoinTest4" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="test.SpatialJoinTest4" />
+      <module name="maven_DebugQTC" />
+      <option name="VM_PARAMETERS" value="-Xmx16g -Xms16g" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vis_range_Point" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="edu.nefu.data_utils.Vis_range_Point" />
+      <module name="maven_DebugQTC" />
+      <option name="VM_PARAMETERS" value="-Xmx16g -Xms16g" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nefu.data_utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BufferPartition_Test" />
-      <item itemvalue="Application.RangeQueryTest2" />
-      <item itemvalue="Application.RangeQueryTest" />
-      <item itemvalue="Application.PriorityDemo" />
-      <item itemvalue="Application.KNNQueryTest2" />
+      <item itemvalue="Application.SpatialJoinTest" />
+      <item itemvalue="Application.Vis_range_Point" />
+      <item itemvalue="Application.SpatialJoinTest3" />
+      <item itemvalue="Application.SpatialJoinTest2" />
+      <item itemvalue="Application.SpatialJoinTest4" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KNNQueryTest2" />
-        <item itemvalue="Application.PriorityDemo" />
-        <item itemvalue="Application.RangeQueryTest2" />
-        <item itemvalue="Application.RangeQueryTest" />
-        <item itemvalue="Application.BufferPartition_Test" />
+        <item itemvalue="Application.SpatialJoinTest4" />
+        <item itemvalue="Application.SpatialJoinTest3" />
+        <item itemvalue="Application.SpatialJoinTest2" />
+        <item itemvalue="Application.Vis_range_Point" />
+        <item itemvalue="Application.SpatialJoinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -303,6 +305,27 @@
       <workItem from="1631708476164" duration="3573000" />
       <workItem from="1631713316164" duration="12000" />
       <workItem from="1631756852204" duration="17000" />
+      <workItem from="1631793929039" duration="52000" />
+      <workItem from="1631794015904" duration="839000" />
+      <workItem from="1631795834164" duration="89000" />
+      <workItem from="1631799916184" duration="1879000" />
+      <workItem from="1631865748394" duration="962000" />
+      <workItem from="1631884577887" duration="159000" />
+      <workItem from="1631886861548" duration="706000" />
+      <workItem from="1631968353801" duration="6166000" />
+      <workItem from="1632011272726" duration="10732000" />
+      <workItem from="1632023826714" duration="98000" />
+      <workItem from="1632023939376" duration="530000" />
+      <workItem from="1632024485787" duration="70000" />
+      <workItem from="1632024703849" duration="223000" />
+      <workItem from="1632024945032" duration="14483000" />
+      <workItem from="1632039552726" duration="446000" />
+      <workItem from="1632040656055" duration="31000" />
+      <workItem from="1632041470476" duration="150000" />
+      <workItem from="1632047166476" duration="9000" />
+      <workItem from="1632102827087" duration="138000" />
+      <workItem from="1632105785201" duration="194000" />
+      <workItem from="1632119797396" duration="29000" />
     </task>
     <servers />
   </component>
@@ -322,15 +345,15 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="201" width="800" height="684" key="#Project_Structure/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631236757838" />
-    <state x="693" y="298" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1631696385416">
+    <state x="693" y="298" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1632037876895">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="693" y="298" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631696385416" />
-    <state x="580" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631625494599">
+    <state x="693" y="298" width="524" height="491" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632037876895" />
+    <state x="580" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632037363009">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="580" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631625494599" />
-    <state x="2500" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1629731703974" />
+    <state x="580" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632037363009" />
+    <state x="2500" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1631866013867" />
     <state x="630" y="239" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1630328479213" />
     <state x="2631" y="463" width="560" height="187" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1628671922843">
       <screen x="1920" y="0" width="1920" height="1080" />
@@ -360,36 +383,36 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="495" y="184" width="920" height="719" key="#nefu_in_maven_DebugQTC/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631693504517" />
-    <state width="1866" height="363" key="GridCell.Tab.0.bottom" timestamp="1631703780388">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1794" height="119" key="GridCell.Tab.0.bottom" timestamp="1632119826239">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1643" height="146" key="GridCell.Tab.0.bottom/0.27.3840.1053@0.27.3840.1053" timestamp="1629985427427" />
-    <state width="1866" height="363" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631703780388" />
-    <state width="1568" height="249" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1631578908532" />
+    <state width="1866" height="162" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632039998299" />
+    <state width="1794" height="119" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1632119826239" />
     <state width="1633" height="147" key="GridCell.Tab.0.bottom/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1630029213581" />
     <state width="1794" height="302" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1630328481021" />
-    <state width="1866" height="363" key="GridCell.Tab.0.center" timestamp="1631703780388">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1794" height="119" key="GridCell.Tab.0.center" timestamp="1632119826239">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1643" height="146" key="GridCell.Tab.0.center/0.27.3840.1053@0.27.3840.1053" timestamp="1629985427427" />
-    <state width="1866" height="363" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631703780388" />
-    <state width="1568" height="249" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1631578908532" />
+    <state width="1866" height="162" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632039998299" />
+    <state width="1794" height="119" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1632119826239" />
     <state width="1633" height="147" key="GridCell.Tab.0.center/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1630029213581" />
     <state width="1794" height="302" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1630328481019" />
-    <state width="1866" height="363" key="GridCell.Tab.0.left" timestamp="1631703780388">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1794" height="119" key="GridCell.Tab.0.left" timestamp="1632119826239">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1643" height="146" key="GridCell.Tab.0.left/0.27.3840.1053@0.27.3840.1053" timestamp="1629985427427" />
-    <state width="1866" height="363" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631703780388" />
-    <state width="1568" height="249" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1631578908532" />
+    <state width="1866" height="162" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632039998299" />
+    <state width="1794" height="119" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1632119826239" />
     <state width="1633" height="147" key="GridCell.Tab.0.left/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1630029213581" />
     <state width="1794" height="302" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1630328481018" />
-    <state width="1866" height="363" key="GridCell.Tab.0.right" timestamp="1631703780388">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1794" height="119" key="GridCell.Tab.0.right" timestamp="1632119826239">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1643" height="146" key="GridCell.Tab.0.right/0.27.3840.1053@0.27.3840.1053" timestamp="1629985427427" />
-    <state width="1866" height="363" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1631703780388" />
-    <state width="1568" height="249" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1631578908532" />
+    <state width="1866" height="162" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632039998299" />
+    <state width="1794" height="119" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1632119826239" />
     <state width="1633" height="147" key="GridCell.Tab.0.right/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1630029213581" />
     <state width="1794" height="302" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1630328481020" />
     <state width="1866" height="311" key="GridCell.Tab.1.bottom" timestamp="1630502471490">
@@ -412,10 +435,10 @@
     </state>
     <state width="1866" height="311" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1630502471490" />
     <state width="1794" height="302" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1630328481023" />
-    <state x="479" y="155" width="1024" height="852" key="SettingsEditor" timestamp="1630554976157">
+    <state x="479" y="155" width="1024" height="852" key="SettingsEditor" timestamp="1632024884556">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="479" y="155" width="1024" height="852" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1630554976157" />
+    <state x="479" y="155" width="1024" height="852" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1632024884556" />
     <state x="2399" y="131" width="1024" height="852" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1628672007556" />
     <state x="763" y="350" width="455" height="452" key="chooseDestDirectoryDialog" timestamp="1629267185200">
       <screen x="0" y="27" width="1920" height="1053" />

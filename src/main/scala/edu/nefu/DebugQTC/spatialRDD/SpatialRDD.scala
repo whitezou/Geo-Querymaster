@@ -665,7 +665,7 @@ class SpatialRDD(rDD: RDD[Geometry]) extends Serializable {
   }
 
   def spatialJoin(right: SpatialRDD): RDD[(Geometry, Geometry)] = {
-    case class Result(result: util.ArrayList[(Geometry, Geometry)], result_buffer: util.ArrayList[(Geometry, Geometry)])
+//    case class Result(result: util.ArrayList[(Geometry, Geometry)], result_buffer: util.ArrayList[(Geometry, Geometry)])
     val result = this.quadPartitionRDD.zipPartitions(right.buffer_gqt_indexedRDD) {
       (iter_buff_quad_partition, iter_buffgqt) =>
 

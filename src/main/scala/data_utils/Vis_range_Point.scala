@@ -104,21 +104,23 @@ object Vis_range_Point extends App {
   val style6 = SLD.createSimpleStyle(featuresource6.getSchema, styleColor6)
   val layer6 = new FeatureLayer(featuresource6, style6)
 
-  //  val featuresource = DataUtilities.source(featureCollection)
+    val featuresource = DataUtilities.source(featureCollection)
   var map = new MapContent
-  //  val style = SLD.createSimpleStyle(featuresource.getSchema, styleColor1)
-  //  val layer = new FeatureLayer(featuresource, style)
+//  map.addLayer(layer6)
+//  map.addLayer(layer5)
+//  map.addLayer(layer4)
+//  map.addLayer(layer3)
+//  map.addLayer(layer2)
+//  map.addLayer(layer1)
+    val style = SLD.createSimpleStyle(featuresource.getSchema, styleColor1)
+    val layer = new FeatureLayer(featuresource, style)
   val shape2Image = new Vector2Image
   System.out.println("第一个")
   val styleColor7 = new Color(0, 0, 255)
-  val parameters = shape2Image.addShapeLayer("/home/runxuan/data/Spatial_Compare/World/points_10M_wkt.csv", map, styleColor7, "multipolygon")
+  val parameters = shape2Image.addShapeLayer("/home/runxuan/data/Spatial_Compare/World/single_machine/buildings_2M.csv", map, styleColor7, "multipolygon")
   map = parameters.map
-  map.addLayer(layer6)
-  map.addLayer(layer5)
-  map.addLayer(layer4)
-  map.addLayer(layer3)
-  map.addLayer(layer2)
-  map.addLayer(layer1)
+  val parameters2 = shape2Image.addShapeLayer("/home/runxuan/data/Spatial_Compare/World/single_machine/linestrings_2M.csv", map, styleColor1, "linestring")
+  map = parameters2.map
   val bbox = Array[Double](parameters.bbox(0), parameters.bbox(1), parameters.bbox(2), parameters.bbox(3))
   val paser = new ParamPaser
   paser.setBbox(bbox)
