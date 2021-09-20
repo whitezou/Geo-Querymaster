@@ -376,11 +376,16 @@ class GQT /*[T <: Geometry]*/ extends Serializable {
     val tr_x_tmp = math.floor((top_right_x - minX) / cell_width).toInt
     val tr_y_tmp = math.floor((top_right_y - minY) / cell_height).toInt
 
-    val bl_x = if (bl_x_tmp < 0) 0 else bl_x_tmp
-    val bl_y = if (bl_y_tmp < 0) 0 else bl_y_tmp
-    val tr_x = if (tr_x_tmp >= cell_number_x) cell_number_x - 1 else tr_x_tmp
-    val tr_y = if (tr_y_tmp >= cell_number_y) cell_number_y - 1 else tr_y_tmp
+    val bl_x = if (bl_x_tmp < 0) return result else bl_x_tmp
+    val bl_y = if (bl_y_tmp < 0) return result else bl_y_tmp
+    val tr_x = if (tr_x_tmp >= cell_number_x) return result else tr_x_tmp
+    val tr_y = if (tr_y_tmp >= cell_number_y) return result else tr_y_tmp
 
+//    val bl_x = if (bl_x_tmp < 0) 0 else if (bl_x_tmp >= cell_number_x) cell_number_x - 1  else bl_x_tmp
+//    val bl_y = if (bl_y_tmp < 0) 0 else if (bl_y_tmp >= cell_number_y) cell_number_y - 1  else bl_y_tmp
+//    val tr_x =if (tr_x_tmp < 0) 0 else if (tr_x_tmp >= cell_number_x) cell_number_x - 1 else tr_x_tmp
+//    val tr_y = if (tr_y_tmp < 0) 0 else if (tr_y_tmp >= cell_number_y) cell_number_y - 1 else tr_y_tmp
+//
 
     val full_Set = mutable.Set[Node]()
     val edge_Set = mutable.Set[Node]()

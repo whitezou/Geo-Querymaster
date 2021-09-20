@@ -26,6 +26,7 @@ import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.index.ItemVisitor;
 import org.locationtech.jts.util.Assert;
+import scala.Tuple2;
 
 /**
  * Base class for STRtree and SIRtree. STR-packed R-trees are described in:
@@ -315,9 +316,14 @@ public abstract class AbstractSTRtree implements Serializable {
             if (childBoundable instanceof AbstractNode) {
                 queryInternal(searchBounds, (AbstractNode) childBoundable, matches);
             } else if (childBoundable instanceof ItemBoundable) {
-                GeometryFactory geometryFactory = new GeometryFactory();
-                if (((Geometry) (((ItemBoundable) childBoundable).getItem())).intersects(geometryFactory.toGeometry((Envelope) searchBounds)))
+                if(((ItemBoundable) childBoundable).getItem() instanceof Tuple2){
                     matches.add(((ItemBoundable) childBoundable).getItem());
+                }else{
+                    GeometryFactory geometryFactory = new GeometryFactory();
+                    if (((Geometry) (((ItemBoundable) childBoundable).getItem())).intersects(geometryFactory.toGeometry((Envelope) searchBounds))) {
+                        matches.add(((ItemBoundable) childBoundable).getItem());
+                    }
+                }
             } else {
                 Assert.shouldNeverReachHere();
             }

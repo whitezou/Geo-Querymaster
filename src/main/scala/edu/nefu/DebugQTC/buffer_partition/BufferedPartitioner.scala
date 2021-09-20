@@ -13,8 +13,13 @@ import org.locationtech.jts.geom.{Envelope, Geometry, Point}
 class BufferedPartitioner(quadTree1: StandardQuadTree[_ <: Geometry]) extends SpatialPartitioner {
 
   private var quadTree: StandardQuadTree[_ <: Geometry] = quadTree1
-  def getQuadTree(): StandardQuadTree[_ <: Geometry]={
+
+  def getQuadTree(): StandardQuadTree[_ <: Geometry] = {
     this.quadTree
+  }
+
+  def this() {
+    this(null)
   }
 
   this.quadTree.dropElements()
